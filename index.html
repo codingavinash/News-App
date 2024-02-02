@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Application</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="nav-bar ">
+        <div class="logo">
+            <a href="#">
+                <img src="logo.png" alt="logo">
+            </a>
+        </div>
+        <div class="topic-item">
+            <ul class="list">
+                <li class="list-item nav-item" id="ipl" onclick="onNavItemClick('ipl')">IPL</li>
+                <li class="list-item nav-item" id="finance" onclick="onNavItemClick('finance')">Finance</li>
+                <li class="list-item nav-item" id="politics" onclick="onNavItemClick('politics')">Politics</li>
+                <li class="list-item nav-item" id="technology" onclick="onNavItemClick('technology')">Technology</li>
+            </ul>
+        </div>
+        <div class="search-bar">
+            <input type="text" name="Search" placeholder="eg. Science" id="Search-input" class="input">
+            <button class="btn" id="Seacrh-btn">Search</button>
+        </div>
+    </nav>
+
+    <main>
+        <div class="cards-container container " id="cards-container">
+            
+        </div>
+    </main>
+
+    <template id="template-news-card">
+        <div class="card">
+            <div class="card-header">
+                <img src="https://via.placeholder.com/400x200" alt="news-img" id="news-img">
+            </div>
+            <div class="card-content">
+                <h3 id="news-title">This is heading</h3>
+                <h6 class="news-source" id="news-source">End gadget 26/12/2023</h6>
+                <p class="news-desc" id="news-desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea numquam quisquam pariatur. Eaque, necessitatibus voluptate.
+                </p>
+            </div>
+        </div>
+    </template>
+
+    <!-- JavaScript  -->
+    <script src="script.js"></script>
+</body>
+</html>
